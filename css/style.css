@@ -1,3 +1,7 @@
+, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
@@ -19,53 +23,48 @@ body {
   background-image: url("../images/rome.jpg")
 }
 
-.container h1 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+h1 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .preview h1 {
-  padding-left: 15px;
   text-align: left;
-}
-
-.preview {
-  height: 120px;
-  background-repeat: no-repeat;
-  max-width: 250px;
-  background-size: 100%;
+  font-family: serif;
+  text-transform: capitalize;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container {
-  margin: 0 auto;
-  width: 40%;
-  height: 400px;
-  overflow-y: scroll;
-  border: 1px solid black;
+  margin: auto;
+  text-align: center;
 }
 
-@media screen and (min-width: 375px) {
-  .container{
-  }
+.preview {
+  display: inline-block;
+  width: 390px;
+  height: 200px;
+  background-size: cover;
+  padding-left: 15px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 630px) {
-  .container {
-  }
   .preview {
-    display: inline-block;
-  }
+    width: 300px;
+    height: 200px;
 }
 
 @media screen and (min-width: 1080px) {
-  .container {
-  }
   .preview {
-    display: inline-block;
-  }
-  .row {
-    display: inline;
-  }
+    width: 300px;
+    height: 200px;
 }
-
